@@ -14,12 +14,11 @@ time.sleep(8)
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 data = soup.find('body', class_='h-full').find_all('h4', class_='text-xl font-semibold')
 apy = data[0].text.split(" ")
-print(apy)
 apy_number = apy[0]
-apy_name = apy[2]
+apy_name = apy[3]
 dr = data[1].text.split(" ")
 dr_number = dr[0]
-dr_name = dr[2]
+dr_name = dr[3]
 tts = data[2].text.split(" ")
 tts_number = tts[0]
 tts_name = tts[2]
@@ -33,3 +32,8 @@ _7d = data[6].text.split(" ")
 _7d_number = _7d[0]
 _7d_name = _7d[2]
 print(apy_name, apy_number)
+print(dr_name, dr_number)
+print(tts_name, tts_number)
+print(_1d_name, _1d_number)
+print(_3d_name, _3d_number)
+print(_7d_name, _7d_number)

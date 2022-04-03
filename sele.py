@@ -14,6 +14,7 @@ time.sleep(8)
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 data = soup.find('body', class_='h-full').find_all('h4', class_='text-xl font-semibold')
 apy = data[0].text.split(" ")
+print(apy)
 apy_number = apy[0]
 apy_name = apy[2]
 dr = data[1].text.split(" ")

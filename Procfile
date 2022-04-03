@@ -1,1 +1,1 @@
-web python sele.py
+web: python sele.py

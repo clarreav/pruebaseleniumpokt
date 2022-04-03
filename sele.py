@@ -2,6 +2,7 @@ from selenium import webdriver
 import os
 import time
 from bs4 import BeautifulSoup
+from selenium.webdriver.chrome.service import Service
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")

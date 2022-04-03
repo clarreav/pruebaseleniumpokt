@@ -14,10 +14,10 @@ time.sleep(8)
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 data = soup.find('body', class_='h-full').find_all('h4', class_='text-xl font-semibold')
 apy = data[0].text.split(" ")
-apy_number = apy[0]
+apy_number = apy[0]+apy[1]
 apy_name = apy[3]
 dr = data[1].text.split(" ")
-dr_number = dr[0]
+dr_number = dr[0]+dr[1]
 dr_name = dr[3]
 tts = data[2].text.split(" ")
 tts_number = tts[0]

@@ -1,1 +1,1 @@
-web: python sele.py
+worker: python sele.py

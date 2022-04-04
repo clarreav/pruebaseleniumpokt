@@ -18,8 +18,9 @@ driver.get("https://thunderpokt.fi/analytics")
 time.sleep(8)
 # Webscrap the driver
 soup = BeautifulSoup(driver.page_source, 'html.parser')
-# Get location of all tags needed
+# Quit the driver to get resources
 driver.quit()
+# Get location of all tags needed
 data = soup.find('body', class_='h-full').find_all('h4', class_='text-xl font-semibold')
 # Manually split and save in variables to avoid time consuming for loops
 apy = data[0].text.split(" ")

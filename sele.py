@@ -62,9 +62,7 @@ def create_responses(input_text):
         _7d = data[6].text.split(" ")
         _7d_number = _7d[0]
         _7d_name = _7d[2]
-        return (
-        apy_name, apy_number, dr_name, dr_number, tts_name, tts_number, _1d_name, _1d_number, _3d_name, _3d_number,
-        _7d_name, _7d_number)
+        return apy_name+": "+apy_number+"\n"+dr_name+": "+dr_number+"\n"+tts_name+": "+tts_number+"\n"+_1d_name+": "+_1d_number+"\n"+_3d_name+": "+_3d_number+"\n"+_7d_name+": "_7d_number
     if input_text == "contract":
         return "TPOKT: 0x5430a0B6C11f870571ffA891d59dec8C4608Ea9A & WTPOKT: 0x301595f6fd5f69faD7a488DaCB8971e7c0C2f559"
     else:
